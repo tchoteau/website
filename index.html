@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thomas Choteau — Software Architect & Tech Lead</title>
+  <meta name="description" content="Thomas Choteau — Software architecture, distributed systems, and secure-by-design engineering." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ── Sticky Header ───────────────────────────────────────── -->
+  <header class="site-header" role="banner">
+    <div class="container nav-inner">
+
+      <a href="#hero" class="nav-logo" aria-label="Thomas Choteau — Back to top">
+        <!-- Hex mark -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" width="28" height="28" aria-hidden="true">
+          <polygon points="16,1.5 27.8,8.25 27.8,21.75 16,28.5 4.2,21.75 4.2,8.25"
+                   fill="#0a0d1a" stroke="#00e5ff" stroke-width="1.4"/>
+          <polygon points="16,5 24.5,9.75 24.5,19.25 16,24 7.5,19.25 7.5,9.75"
+                   fill="none" stroke="rgba(0,229,255,0.2)" stroke-width="0.6"/>
+          <text x="9.2" y="20.5" font-family="monospace" font-size="11" font-weight="700"
+                fill="#00e5ff" letter-spacing="-0.5">TC</text>
+          <circle cx="25" cy="7.5" r="2" fill="#c9a84c"/>
+        </svg>
+        <!-- Name -->
+        <span style="color:var(--text-primary);">Thomas</span><span class="logo-dot" style="color:var(--gold);">.</span><span style="color:var(--cyan);">Choteau</span>
+      </a>
+
+      <div style="display:flex;align-items:center;gap:var(--space-3);">
+
+        <!-- Language toggle -->
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="#hero"    data-i18n="nav.home">Accueil</a></li>
+          <li><a href="#game"    data-i18n="nav.game">Jeu</a></li>
+          <li>
+            <a href="#contact" id="contactNavLink" class="disabled" aria-describedby="contact-status">
+              <span data-i18n="nav.contact">Contact</span>
+              <span class="lock-badge locked" id="contact-status" aria-live="polite" data-i18n="nav.locked">verrouillé</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ── Main ─────────────────────────────────────────────────── -->
+  <main id="main">
+
+    <!-- ════════════════════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <p class="hero-eyebrow" data-i18n="hero.eyebrow">Ingénieur Logiciel · Tech Lead</p>
+        <h1 id="hero-title">
+          <span data-i18n="hero.title">Bonjour, je suis</span><br/>
+          <span class="name-highlight">Thomas Choteau</span>
+        </h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">
+          Tech Lead sur une plateforme supply chain distribuée et event-driven qui orchestre la gestion des commandes à l'échelle mondiale.
+        </p>
+        <div class="hero-actions">
+          <a href="#game" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            <span data-i18n="hero.cta.game">Jouer pour débloquer le contact</span>
+          </a>
+          <a href="https://github.com/tchoteau" target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span data-i18n="hero.cta.gh">GitHub</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <!-- ════════════════════════════════════════════════════════
+         WHAT I'M WORKING ON
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="working" aria-labelledby="working-title">
+      <div class="container">
+        <p class="section-label"  data-i18n="working.label">Focus actuel</p>
+        <h2 class="section-title" data-i18n="working.title" id="working-title">Sur quoi je travaille</h2>
+        <p class="section-desc"   data-i18n="working.desc">Construire des systèmes résilients et event-driven à grande échelle.</p>
+
+        <div class="working-on-grid stagger" role="list">
+
+          <article class="card fade-in" role="listitem">
+            <div class="working-card-icon" style="background:rgba(0,229,255,0.1);">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </div>
+            <p class="working-card-stack" data-i18n="card1.stack">Spring Boot 4 · Reactor · Kafka Streams · MongoDB · GraphQL</p>
+            <p class="working-card-desc"  data-i18n="card1.desc">Plateforme OMS — réactive, event-driven, distribuée à l'échelle mondiale.</p>
+          </article>
+
+          <article class="card card-gold fade-in" role="listitem">
+            <div class="working-card-icon" style="background:rgba(201,168,76,0.1);">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#c9a84c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3L9.5 9.5 3 12l6.5 2.5L12 21l2.5-6.5L21 12l-6.5-2.5L12 3z"/></svg>
+            </div>
+            <p class="working-card-stack" style="color:var(--gold);" data-i18n="card2.stack">Spring AI + Gemini — intégration de l'intelligence dans les flux OMS</p>
+            <p class="working-card-desc"  data-i18n="card2.desc">Cycle de vie des commandes augmenté par LLM.</p>
+          </article>
+
+          <article class="card fade-in" role="listitem">
+            <div class="working-card-icon" style="background:rgba(57,255,20,0.08);">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#39ff14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <p class="working-card-stack" style="color:var(--green);" data-i18n="card3.stack">Un serveur MCP pour le support, l'investigation et l'automatisation assistés par IA</p>
+            <p class="working-card-desc"  data-i18n="card3.desc">Serveur Model Context Protocol — pont entre les agents IA et les outils internes.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <!-- ════════════════════════════════════════════════════════
+         WHAT I CARE ABOUT
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="values" aria-labelledby="values-title">
+      <div class="container">
+        <p class="section-label"  data-i18n="values.label">Valeurs</p>
+        <h2 class="section-title" data-i18n="values.title" id="values-title">Ce qui me tient à cœur</h2>
+        <p class="section-desc"   data-i18n="values.desc">Les principes qui guident chaque décision technique et chaque interaction en équipe.</p>
+
+        <ul class="care-list stagger">
+          <li class="care-item fade-in">
+            <svg class="care-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span data-i18n="care.1">Sécurité par conception &amp; défense en profondeur</span>
+          </li>
+          <li class="care-item fade-in">
+            <svg class="care-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <span data-i18n="care.2">Réduire le MTTR &amp; améliorer l'observabilité</span>
+          </li>
+          <li class="care-item fade-in">
+            <svg class="care-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            <span data-i18n="care.3">Excellence d'ingénierie &amp; DX</span>
+          </li>
+          <li class="care-item fade-in">
+            <svg class="care-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span data-i18n="care.4">Culture inner-source &amp; partage de connaissances</span>
+          </li>
+          <li class="care-item fade-in">
+            <svg class="care-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span data-i18n="care.5">Domotique</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <!-- ════════════════════════════════════════════════════════
+         ARCHITECTURE & SECURITY
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="arch" aria-labelledby="arch-title">
+      <div class="container">
+        <p class="section-label"  data-i18n="arch.label">Architecture &amp; Sécurité</p>
+        <h2 class="section-title" data-i18n="arch.title" id="arch-title">Comment je construis les systèmes</h2>
+        <p class="section-desc"   data-i18n="arch.desc">Sécurité et résilience comme préoccupations de premier ordre, jamais en afterthought.</p>
+
+        <ul class="arch-bullets fade-in">
+          <li data-i18n="arch.1">Frontières zero-trust entre microservices — mTLS, comptes de service scopés, et autorisation explicite à chaque saut.</li>
+          <li data-i18n="arch.2">Architecture event-driven avec consommateurs idempotents et outbox pattern pour garantir la sémantique exactly-once.</li>
+          <li data-i18n="arch.3">Stack d'observabilité : logs structurés, traces distribuées et métriques RED — MTTR optimisé de l'alerte à la cause racine.</li>
+          <li data-i18n="arch.4">Threat modeling et SAST en CI, scan de secrets avec pre-commit hooks, et gates de vulnérabilité sur chaque build.</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <!-- ════════════════════════════════════════════════════════
+         GAME
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="game" aria-labelledby="game-title">
+      <div class="container">
+
+        <div class="game-header fade-in">
+          <p class="section-label" data-i18n="game.label">Mini-jeu</p>
+          <h2 id="game-title" style="margin-bottom:var(--space-2);" data-i18n-html="game.title">snake<span style="color:var(--cyan)">.exe</span></h2>
+          <p style="color:var(--text-secondary);font-size:0.9rem;max-width:500px;" data-i18n-html="game.desc">
+            Naviguez dans le réseau. Consommez les virus. Atteignez <strong style="color:var(--gold);">10 points</strong> pour débloquer le formulaire de contact.
+          </p>
+        </div>
+
+        <div class="game-arena" style="margin-top:var(--space-8);">
+
+          <div class="score-bar" role="status" aria-live="polite" aria-label="Score">
+            <span data-i18n="game.score">SCORE</span>
+            <span class="score-value" id="scoreValue">0</span>
+            <span>/</span>
+            <span style="color:var(--gold);">10</span>
+          </div>
+
+          <div class="game-canvas-wrap">
+            <canvas id="gameCanvas" width="400" height="400" tabindex="0"
+                    aria-label="Snake game — use arrow keys or WASD"></canvas>
+
+            <div class="game-overlay" id="gameOverlay" role="dialog" aria-modal="false" aria-labelledby="overlayTitle">
+              <p class="overlay-title"    id="overlayTitle"    data-i18n="game.overlay.start.title">[ SNAKE.EXE ]</p>
+              <p class="overlay-subtitle" id="overlaySubtitle" data-i18n="game.overlay.start.subtitle">Appuie sur [ESPACE], [↑] ou tape pour démarrer</p>
+              <button class="btn btn-primary" id="overlayBtn"
+                      onclick="document.dispatchEvent(new KeyboardEvent('keydown',{key:' ',bubbles:true}))"
+                      style="margin-top:var(--space-2);" data-i18n="game.overlay.start.btn">▶ Démarrer</button>
+            </div>
+          </div>
+
+          <!-- Touch controls -->
+          <div class="touch-controls" aria-label="On-screen directional controls" role="group">
+            <div class="touch-row">
+              <button class="touch-btn" id="btnUp"    aria-label="Up">▲</button>
+            </div>
+            <div class="touch-row">
+              <button class="touch-btn" id="btnLeft"  aria-label="Left">◀</button>
+              <button class="touch-btn" id="btnDown"  aria-label="Down">▼</button>
+              <button class="touch-btn" id="btnRight" aria-label="Right">▶</button>
+            </div>
+          </div>
+
+          <p class="game-status" id="gameStatus" data-i18n-html="game.status">
+            Clavier : <kbd style="font-family:var(--font-mono);color:var(--cyan);">↑ ↓ ← →</kbd>
+            ou <kbd style="font-family:var(--font-mono);color:var(--cyan);">W A S D</kbd>
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <!-- ════════════════════════════════════════════════════════
+         CONTACT
+    ═══════════════════════════════════════════════════════════ -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container" style="max-width:660px;">
+
+        <!-- ── LOCKED ──────────────────────────────────────── -->
+        <div id="contactLocked" class="contact-locked-msg">
+          <svg class="lock-icon-large" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="1.5"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+
+          <h2 id="contact-title" data-i18n="contact.locked.title"
+              style="color:var(--text-muted);font-size:1.3rem;">Contact — verrouillé</h2>
+
+          <p class="locked-text" data-i18n-html="contact.locked.text">
+            Terminez le jeu ci-dessus avec un score de <strong style="color:var(--gold);">10 points</strong> pour débloquer le formulaire de contact.
+          </p>
+
+          <div class="score-progress" role="progressbar"
+               aria-valuenow="0" aria-valuemin="0" aria-valuemax="10"
+               aria-label="Score progress">
+            <div class="score-progress-fill" id="scoreProgressFill"></div>
+          </div>
+
+          <p style="font-size:0.78rem;color:var(--text-muted);font-family:var(--font-mono);">
+            <span data-i18n="contact.locked.progress">Progression :</span>
+            <span id="scoreProgressLabel">0</span> / 10
+          </p>
+
+          <a href="#game" class="btn btn-primary" style="margin-top:var(--space-2);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/>
+            </svg>
+            <span data-i18n="contact.locked.cta">Jouer au jeu</span>
+          </a>
+        </div>
+
+        <!-- ── UNLOCKED ────────────────────────────────────── -->
+        <div class="contact-form-section" id="contactFormSection">
+
+          <div style="text-align:center;margin-bottom:var(--space-8);">
+            <span style="font-size:2.5rem;line-height:1;">🔓</span>
+            <h2 data-i18n="contact.unlocked.title"
+                style="color:var(--green);margin-top:var(--space-3);">Contact débloqué !</h2>
+            <p  data-i18n="contact.unlocked.subtitle"
+                style="color:var(--text-secondary);font-size:0.9rem;">Bien joué. Laissez un message.</p>
+          </div>
+
+          <form id="contactForm" novalidate>
+
+            <div class="form-group">
+              <label class="form-label" for="contactName" data-i18n="form.name.label">Nom</label>
+              <input class="form-input" type="text" id="contactName" name="name"
+                     autocomplete="name" required aria-required="true"
+                     aria-describedby="nameError"
+                     data-i18n-placeholder="form.name.placeholder"
+                     placeholder="Votre nom" />
+              <span class="form-error" id="nameError" role="alert" data-i18n="form.name.error">Veuillez entrer votre nom.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactEmail" data-i18n="form.email.label">Email</label>
+              <input class="form-input" type="email" id="contactEmail" name="email"
+                     autocomplete="email" required aria-required="true"
+                     aria-describedby="emailError"
+                     data-i18n-placeholder="form.email.placeholder"
+                     placeholder="vous@exemple.com" />
+              <span class="form-error" id="emailError" role="alert" data-i18n="form.email.error">Veuillez entrer une adresse email valide.</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contactMessage" data-i18n="form.message.label">Message</label>
+              <textarea class="form-textarea" id="contactMessage" name="message"
+                        required aria-required="true"
+                        aria-describedby="messageError"
+                        data-i18n-placeholder="form.message.placeholder"
+                        placeholder="Votre message…"></textarea>
+              <span class="form-error" id="messageError" role="alert" data-i18n="form.message.error">Veuillez entrer un message.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary"
+                    style="width:100%;justify-content:center;"
+                    data-i18n="form.submit">Envoyer →</button>
+
+            <div class="form-success" id="formSuccess" role="alert" data-i18n="form.success">
+              ✓ Message envoyé ! Je vous répondrai bientôt.
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ──────────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy" data-i18n="footer.copy">© 2025 Thomas Choteau — Construit avec curiosité &amp; caféine.</p>
+      <ul class="footer-links" aria-label="Social links">
+        <li>
+          <a href="https://github.com/tchoteau" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/tchoteau/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Scripts: i18n first, then app, then game -->
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      /* ── Section scroll highlight ─────────────────────────── */
+      const sections = ['hero','working','values','arch','game','contact'];
+      const navAnchors = document.querySelectorAll('.nav-links a');
+
+      const sectionObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            navAnchors.forEach(a => {
+              a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id);
+            });
+          }
+        });
+      }, { threshold: 0.35 });
+
+      sections.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) sectionObserver.observe(el);
+      });
+
+      /* ── Contact form validation ──────────────────────────── */
+      const form = document.getElementById('contactForm');
+      if (form) {
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          let valid = true;
+          const name    = form.querySelector('[name="name"]');
+          const email   = form.querySelector('[name="email"]');
+          const message = form.querySelector('[name="message"]');
+
+          [name, email, message].forEach(f => f.classList.remove('error'));
+          form.querySelectorAll('.form-error').forEach(el => el.classList.remove('visible'));
+          form.querySelector('.form-success')?.classList.remove('visible');
+
+          if (!name.value.trim()) {
+            name.classList.add('error');
+            document.getElementById('nameError').classList.add('visible');
+            valid = false;
+          }
+          if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) {
+            email.classList.add('error');
+            document.getElementById('emailError').classList.add('visible');
+            valid = false;
+          }
+          if (!message.value.trim()) {
+            message.classList.add('error');
+            document.getElementById('messageError').classList.add('visible');
+            valid = false;
+          }
+
+          if (valid) {
+            form.reset();
+            document.getElementById('formSuccess').classList.add('visible');
+          } else {
+            form.querySelector('.error')?.focus();
+          }
+        });
+      }
+
+      /* ── Restore unlock state ─────────────────────────────── */
+      if (localStorage.getItem('contactUnlocked') === 'true') {
+        document.getElementById('contactLocked').style.display = 'none';
+        document.getElementById('contactFormSection').classList.add('visible');
+        const badge = document.querySelector('.lock-badge');
+        if (badge) {
+          badge.classList.replace('locked', 'unlocked');
+          badge.setAttribute('data-i18n', 'nav.unlocked');
+        }
+        document.getElementById('contactNavLink')?.classList.remove('disabled');
+      }
+    });
+  </script>
+  <script src="game.js"></script>
+</body>
+</html>

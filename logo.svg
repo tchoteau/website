@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 56" fill="none">
+
+  <!-- ── Icon mark: hexagon ─────────────────────────────── -->
+  <!-- Outer hex -->
+  <polygon
+    points="28,2 51.1,15 51.1,41 28,54 4.9,41 4.9,15"
+    fill="#0a0d1a"
+    stroke="#00e5ff"
+    stroke-width="1.6"
+  />
+  <!-- Inner hex ring -->
+  <polygon
+    points="28,8 46,18.5 46,37.5 28,48 10,37.5 10,18.5"
+    fill="none"
+    stroke="rgba(0,229,255,0.2)"
+    stroke-width="0.8"
+  />
+  <!-- Grid lines inside hex (blueprint feel) -->
+  <line x1="28" y1="8"  x2="28" y2="48" stroke="rgba(0,229,255,0.08)" stroke-width="0.6"/>
+  <line x1="10" y1="28" x2="46" y2="28" stroke="rgba(0,229,255,0.08)" stroke-width="0.6"/>
+  <!-- TC initials -->
+  <text
+    x="28" y="34"
+    font-family="'JetBrains Mono', 'Courier New', monospace"
+    font-size="17"
+    font-weight="700"
+    fill="#00e5ff"
+    text-anchor="middle"
+    letter-spacing="-0.5"
+  >TC</text>
+  <!-- Gold accent dot -->
+  <circle cx="47.5" cy="13" r="2.8" fill="#c9a84c"/>
+
+  <!-- ── Name & title ───────────────────────────────────── -->
+  <!-- Name -->
+  <text
+    x="70" y="24"
+    font-family="'JetBrains Mono', 'Courier New', monospace"
+    font-size="15"
+    font-weight="700"
+    fill="#e8edf5"
+    letter-spacing="-0.3"
+  >Thomas Choteau</text>
+
+  <!-- Separator line -->
+  <line x1="70" y1="30" x2="274" y2="30" stroke="rgba(0,229,255,0.15)" stroke-width="0.7"/>
+
+  <!-- Tagline -->
+  <text
+    x="70" y="43"
+    font-family="'JetBrains Mono', 'Courier New', monospace"
+    font-size="9"
+    font-weight="400"
+    fill="#8a96b0"
+    letter-spacing="0.06em"
+  >Tech Lead  ·  Software Architect  ·  Secure-by-Design</text>
+
+  <!-- Cyan dot before tagline -->
+  <circle cx="64" cy="39.5" r="2" fill="#00e5ff" opacity="0.7"/>
+
+</svg>

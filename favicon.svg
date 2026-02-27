@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Background hex (pointy-top) -->
+  <polygon
+    points="16,1.5 27.8,8.25 27.8,21.75 16,28.5 4.2,21.75 4.2,8.25"
+    fill="#0a0d1a"
+    stroke="#00e5ff"
+    stroke-width="1.4"
+  />
+  <!-- Inner hex ring (subtle depth) -->
+  <polygon
+    points="16,5 24.5,9.75 24.5,19.25 16,24 7.5,19.25 7.5,9.75"
+    fill="none"
+    stroke="rgba(0,229,255,0.18)"
+    stroke-width="0.6"
+  />
+  <!-- T -->
+  <text
+    x="9.2" y="20.5"
+    font-family="'JetBrains Mono', monospace"
+    font-size="11"
+    font-weight="700"
+    fill="#00e5ff"
+    letter-spacing="-0.5"
+  >TC</text>
+  <!-- Gold accent dot (top-right corner) -->
+  <circle cx="25" cy="7.5" r="2" fill="#c9a84c"/>
+</svg>
