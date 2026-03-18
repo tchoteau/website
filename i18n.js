@@ -19,7 +19,7 @@ const translations = {
     /* Hero */
     'hero.eyebrow': 'Software Engineer · Tech Lead',
     'hero.title': "Hello, I'm",
-    'hero.subtitle': 'Tech Lead on a distributed, event-driven supply chain platform orchestrating order management at global scale.',
+    'hero.subtitle': 'Tech Lead on assignment at ADEO on the supply chain platform, where we orchestrate order management at a global scale.',
     'hero.cta.game': 'Play to unlock contact',
     'hero.cta.gh': 'GitHub',
 
@@ -104,7 +104,7 @@ const translations = {
     /* Hero */
     'hero.eyebrow': 'Ingénieur logiciel · Tech Lead',
     'hero.title': 'Bonjour, je suis',
-    'hero.subtitle': "Tech Lead chez ADEO sur une plateforme supply chain event-driven, qui orchestre la gestion des commandes à l’échelle mondiale.",
+    'hero.subtitle': "Tech Lead en mission chez ADEO sur la plateforme supply chain, on orchestre la gestion des commandes à l’échelle mondiale.",
     'hero.cta.game': 'Jouer pour débloquer le contact',
     'hero.cta.gh': 'GitHub',
 
