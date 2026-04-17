@@ -64,7 +64,7 @@ const translations = {
     'arch.harness.point3.title': 'Shift-Left Test Harnesses',
     'arch.harness.point3.desc': 'Contract testing, chaos test fixtures, and integration harnesses committed alongside the service — so regressions are caught in the developer loop, not in production.',
     'arch.harness.point4.title': 'Reduced Cognitive Load',
-    'arch.harness.desc2': 'The goal is not to control — it is to make the right thing the easy thing, letting product teams focus on business logic while the platform handles compliance, observability, and resilience by default.',
+    'arch.harness.point4.desc': 'The goal is not to control — it is to make the right thing the easy thing, letting product teams focus on business logic while the platform handles compliance, observability, and resilience by default.',
 
     /* Game */
     'game.label': 'Mini-game',
@@ -162,7 +162,7 @@ const translations = {
     'arch.harness.point3.title': 'Test Harnesses Shift-Left',
     'arch.harness.point3.desc': "Tests de contrat, fixtures de chaos testing et harnesses d'intégration versionnés avec le service — pour que les régressions soient détectées dans la boucle développeur, pas en production.",
     'arch.harness.point4.title': 'Réduction de la charge cognitive',
-    'arch.harness.desc2': "L'objectif n'est pas de contrôler — c'est de rendre la bonne pratique facile, pour que les équipes produit se concentrent sur la logique métier pendant que la plateforme gère la conformité, l'observabilité et la résilience par défaut.",
+    'arch.harness.point4.desc': "L'objectif n'est pas de contrôler — c'est de rendre la bonne pratique facile, pour que les équipes produit se concentrent sur la logique métier pendant que la plateforme gère la conformité, l'observabilité et la résilience par défaut.",
 
     /* Game */
     'game.label': 'Mini-jeu',
