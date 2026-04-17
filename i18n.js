@@ -53,6 +53,19 @@ const translations = {
     'arch.3': 'Observability built on structured logs, distributed tracing, and RED metrics, with MTTR optimized from alert to root cause.',
     'arch.4': 'Threat modeling and SAST in CI, secrets scanning via pre-commit hooks, and dependency vulnerability gates on every build.',
 
+    /* Harness Engineering */
+    'arch.harness.label': 'Harness Engineering',
+    'arch.harness.title': 'Building the safety net for developers',
+    'arch.harness.desc': 'Harness engineering is about building the internal platforms, golden paths, and tooling scaffolds that let teams move fast without breaking things — shifting the cognitive load from every developer to a shared, battle-tested foundation.',
+    'arch.harness.point1.title': 'Platform as a Product',
+    'arch.harness.point1.desc': 'Treating the internal developer platform like a product: versioned APIs, changelogs, and SLAs — so teams self-serve without waiting on infrastructure tickets.',
+    'arch.harness.point2.title': 'Golden Paths',
+    'arch.harness.point2.desc': 'Opinionated templates and scaffolding (Spring Boot starters, Dockerfile archetypes, Terraform modules) that encode best practices and security baselines from day zero.',
+    'arch.harness.point3.title': 'Shift-Left Test Harnesses',
+    'arch.harness.point3.desc': 'Contract testing, chaos test fixtures, and integration harnesses committed alongside the service — so regressions are caught in the developer loop, not in production.',
+    'arch.harness.point4.title': 'Reduced Cognitive Load',
+    'arch.harness.desc2': 'The goal is not to control — it is to make the right thing the easy thing, letting product teams focus on business logic while the platform handles compliance, observability, and resilience by default.',
+
     /* Game */
     'game.label': 'Mini-game',
     'game.title': 'snake<span style="color:var(--cyan)">.exe</span>',
@@ -135,8 +148,21 @@ const translations = {
     'arch.desc': 'La sécurité et la résilience font partie du design, elles ne se rajoutent pas après coup.',
     'arch.1': 'Frontières zero-trust entre microservices: mTLS, comptes de service à privilèges limités, autorisation explicite à chaque appel.',
     'arch.2': "Architecture event-driven avec consommateurs idempotents et outbox pattern, pour des traitements fiables sur des transactions distribuées.",
-    'arch.3': "Observabilité basée sur logs structurés, traces distribuées et métriques RED, avec un MTTR optimisé de l’alerte à la cause racine.",
+    'arch.3': "Observabilité basée sur logs structurés, traces distribuées et métriques RED, avec un MTTR optimisé de l'alerte à la cause racine.",
     'arch.4': "Threat modeling et SAST en CI, scan de secrets via hooks pre-commit, et garde-fous sur les dépendances à chaque build.",
+
+    /* Harness Engineering */
+    'arch.harness.label': 'Harness Engineering',
+    'arch.harness.title': 'Construire le filet de sécurité des développeurs',
+    'arch.harness.desc': "Le harness engineering consiste à construire les plateformes internes, les golden paths et les scaffolds d'outillage qui permettent aux équipes d'aller vite sans tout casser — en déplaçant la charge cognitive de chaque développeur vers une fondation partagée et éprouvée.",
+    'arch.harness.point1.title': 'Plateforme comme produit',
+    'arch.harness.point1.desc': "Traiter la plateforme développeur interne comme un produit : APIs versionnées, changelogs et SLAs — pour que les équipes soient autonomes sans attendre des tickets infrastructure.",
+    'arch.harness.point2.title': 'Golden Paths',
+    'arch.harness.point2.desc': "Templates et scaffolding opinionated (starters Spring Boot, archetypes Dockerfile, modules Terraform) qui intègrent les bonnes pratiques et les baselines de sécurité dès le jour zéro.",
+    'arch.harness.point3.title': 'Test Harnesses Shift-Left',
+    'arch.harness.point3.desc': "Tests de contrat, fixtures de chaos testing et harnesses d'intégration versionnés avec le service — pour que les régressions soient détectées dans la boucle développeur, pas en production.",
+    'arch.harness.point4.title': 'Réduction de la charge cognitive',
+    'arch.harness.desc2': "L'objectif n'est pas de contrôler — c'est de rendre la bonne pratique facile, pour que les équipes produit se concentrent sur la logique métier pendant que la plateforme gère la conformité, l'observabilité et la résilience par défaut.",
 
     /* Game */
     'game.label': 'Mini-jeu',

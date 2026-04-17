@@ -638,6 +638,107 @@ section {
   flex-shrink: 0;
 }
 
+/* Harness Engineering card */
+.harness-card {
+  margin-top: var(--space-8);
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(201, 168, 76, 0.05) 100%);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-card), 0 0 32px rgba(201, 168, 76, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.harness-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.harness-card-header {
+  margin-bottom: var(--space-6);
+}
+
+.harness-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: var(--gold-dim);
+  border: 1px solid var(--border-gold);
+  border-radius: 4px;
+  padding: 0.2em 0.7em;
+  margin-bottom: var(--space-3);
+}
+
+.harness-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 var(--space-3);
+}
+
+.harness-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin: 0;
+  max-width: 640px;
+}
+
+.harness-points {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-4);
+}
+
+.harness-point {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  padding: var(--space-4);
+  background: rgba(201, 168, 76, 0.04);
+  border: 1px solid rgba(201, 168, 76, 0.12);
+  border-radius: var(--radius);
+  transition: all var(--t-med);
+}
+
+.harness-point:hover {
+  background: rgba(201, 168, 76, 0.08);
+  border-color: var(--border-gold);
+}
+
+.harness-point-icon {
+  color: var(--gold);
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+  line-height: 1.4;
+}
+
+.harness-point strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-1);
+}
+
+.harness-point p {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
 /* Footer */
 .site-footer {
   position: relative;
