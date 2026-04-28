@@ -17,9 +17,9 @@ const translations = {
     'nav.unlocked': 'unlocked',
 
     /* Hero */
-    'hero.eyebrow': 'Tech Lead · AI Engineer — Lille',
-    'hero.title': "Hello, I'm",
-    'hero.subtitle': 'Tech Lead & AI Engineer based in Lille. On assignment at ADEO on the supply chain platform, orchestrating order management at global scale.',
+    'hero.eyebrow': 'Tech Lead · AI Expert — Lille',
+    'hero.title': 'Tech Lead & AI Expert in Lille',
+    'hero.subtitle': 'Tech Lead & AI Expert based in Lille (Hauts-de-France, France). On assignment at ADEO on the supply chain platform, orchestrating order management at global scale. Distributed architecture, AI agent engineering and harness engineering for the Lille metropolitan area and beyond.',
     'hero.cta.game': 'Play to unlock contact',
     'hero.cta.gh': 'GitHub',
 
@@ -125,9 +125,9 @@ const translations = {
     'nav.unlocked': 'débloqué',
 
     /* Hero */
-    'hero.eyebrow': 'Tech Lead · AI Engineer — Lille',
-    'hero.title': 'Bonjour, je suis',
-    'hero.subtitle': "Tech Lead & AI Engineer basé à Lille. En mission chez ADEO sur la plateforme supply chain, on orchestre la gestion des commandes à l’échelle mondiale.",
+    'hero.eyebrow': 'Tech Lead · Expert IA — Lille',
+    'hero.title': 'Tech Lead & Expert IA à Lille',
+    'hero.subtitle': "Tech Lead & Expert IA basé à Lille (Hauts-de-France). En mission chez ADEO sur la plateforme supply chain, on orchestre la gestion des commandes à l’échelle mondiale. Architecture distribuée, ingénierie d’agents IA et harness engineering pour la métropole lilloise et au-delà.",
     'hero.cta.game': 'Jouer pour débloquer le contact',
     'hero.cta.gh': 'GitHub',
 
