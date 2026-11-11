@@ -8,8 +8,8 @@ Pure **HTML / CSS / JS** — no build step, no dependencies. Fonts (Inter, JetBr
 
 ## Features
 
-- **Home** — Hero, "What I'm working on" with the Lextia block, "What I care about", Architecture & reliability, AI agent engineering
-- **Game** — Cybersecurity-themed Snake (canvas). Snake head = terminal skull. Food = virus icons. Score 10 to unlock the contact form.
+- **Home** — Hero, "What I'm working on" with the Lextia block, "What I care about", Architecture & reliability, AI Enabler
+- **Game** — Cybersecurity-themed Snake (canvas). Snake head = terminal skull. Food = virus icons. Score 3 to unlock the contact form.
 - **Contact** — Guarded form (accessible only after scoring 10, unlock persisted via `localStorage`), delivered by [Web3Forms](https://web3forms.com). A LinkedIn link is offered next to the game.
 - Dark design: night-blue background, cyan/green neon accents, subtle blueprint grid, micro-animations. Lextia gold `#E8B84B` is used only for Lextia.
 - Responsive mobile/desktop. Accessible (WCAG AA contrast, keyboard navigation, visible focus, skip-to-content, aria-labels).
