@@ -41,7 +41,6 @@
     head:      '#00e5ff',
     food:      '#ff4444',
     foodGlow:  'rgba(255, 68, 68, 0.35)',
-    gold:      '#c9a84c',
     text:      '#8a96b0',
     cyan:      '#00e5ff',
     green:     '#39ff14',
