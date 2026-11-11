@@ -4,7 +4,7 @@
  * - Food: virus/bug icons
  * - Keyboard: arrows + WASD
  * - Touch: on-screen buttons
- * - Unlock contact at score >= 10
+ * - Unlock contact at score >= 3
  */
 
 (function () {
@@ -13,7 +13,7 @@
   /* ── Config ─────────────────────────────────────────────── */
   const GRID = 20;       // cells
   const BASE_SPEED = 150; // ms per tick
-  const UNLOCK_SCORE = 10;
+  const UNLOCK_SCORE = 3;
   const UNLOCK_KEY = 'contactUnlocked';
 
   /* ── Canvas setup ────────────────────────────────────────── */
