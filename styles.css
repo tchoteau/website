@@ -2,8 +2,14 @@
    DESIGN SYSTEM — Dark Premium / Dev + Cyber
    ============================================================ */
 
-/* --- Google Fonts Import --- */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap');
+/* --- Fonts, served by the site itself (no call to Google Fonts) --- */
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 300; font-display: swap; src: url('fonts/inter-latin-300-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/inter-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url('fonts/inter-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/inter-latin-600-normal.woff2') format('woff2'); }
+@font-face { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/jetbrains-mono-latin-400-normal.woff2') format('woff2'); }
+@font-face { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 500; font-display: swap; src: url('fonts/jetbrains-mono-latin-500-normal.woff2') format('woff2'); }
+@font-face { font-family: 'JetBrains Mono'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/jetbrains-mono-latin-700-normal.woff2') format('woff2'); }
 
 /* --- CSS Custom Properties --- */
 :root {
@@ -16,8 +22,9 @@
   --cyan:     #00e5ff;
   --cyan-dim: rgba(0, 229, 255, 0.12);
   --green:    #39ff14;
-  --gold:     #c9a84c;
-  --gold-dim: rgba(201, 168, 76, 0.15);
+  /* Gold is reserved for Lextia (its own brand gold). */
+  --lextia-gold:     #E8B84B;
+  --lextia-gold-dim: rgba(232, 184, 75, 0.12);
 
   --text-primary:   #e8edf5;
   --text-secondary: #8a96b0;
@@ -25,7 +32,7 @@
 
   --border:        rgba(255, 255, 255, 0.06);
   --border-cyan:   rgba(0, 229, 255, 0.25);
-  --border-gold:   rgba(201, 168, 76, 0.35);
+  --border-lextia:  rgba(232, 184, 75, 0.45);
 
   /* Typography */
   --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
@@ -55,7 +62,7 @@
 
   /* Shadows */
   --shadow-cyan: 0 0 18px rgba(0, 229, 255, 0.18);
-  --shadow-gold: 0 0 18px rgba(201, 168, 76, 0.18);
+  --shadow-lextia: 0 0 18px rgba(232, 184, 75, 0.2);
   --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
 }
 
@@ -185,7 +192,7 @@ section {
 }
 .nav-logo:hover { opacity: 0.85; }
 .nav-logo .logo-bracket { color: var(--cyan); }
-.nav-logo .logo-dot { color: var(--gold); }
+.nav-logo .logo-dot { color: var(--text-secondary); }
 
 .nav-links {
   display: flex;
@@ -267,9 +274,9 @@ section {
   font-weight: 700;
   letter-spacing: 0.08em;
   padding: 4px 10px;
-  background: var(--gold-dim);
-  color: var(--gold);
-  border: 1px solid var(--border-gold);
+  background: var(--cyan-dim);
+  color: var(--cyan);
+  border: 1px solid var(--border-cyan);
   border-radius: var(--radius);
   cursor: pointer;
   transition: all var(--t-fast);
@@ -277,8 +284,8 @@ section {
   order: -1; /* appears before hamburger on mobile */
 }
 .lang-toggle:hover {
-  background: rgba(201, 168, 76, 0.25);
-  box-shadow: var(--shadow-gold);
+  background: rgba(0, 229, 255, 0.25);
+  box-shadow: var(--shadow-cyan);
 }
 
 /* --- Hamburger (mobile) --- */
@@ -329,16 +336,8 @@ section {
   color: var(--cyan);
 }
 
-.btn-gold {
-  background: var(--gold-dim);
-  color: var(--gold);
-  border-color: var(--border-gold);
-}
-.btn-gold:hover {
-  background: rgba(201, 168, 76, 0.25);
-  box-shadow: var(--shadow-gold);
-  color: var(--gold);
-}
+
+
 
 /* --- Cards --- */
 .card {
@@ -359,37 +358,7 @@ section {
   background: var(--bg-card-hover);
 }
 
-/* Gold shimmer border animation */
-.card-gold {
-  border-color: var(--border-gold);
-}
-.card-gold::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  padding: 1px;
-  background: linear-gradient(
-    135deg,
-    transparent 0%,
-    rgba(201, 168, 76, 0.4) 30%,
-    transparent 60%,
-    rgba(201, 168, 76, 0.4) 90%,
-    transparent 100%
-  );
-  background-size: 200% 200%;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  animation: shimmer 3s linear infinite;
-  pointer-events: none;
-}
 
-@keyframes shimmer {
-  0%   { background-position: 200% 200%; }
-  100% { background-position: -200% -200%; }
-}
 
 /* --- Section Headers --- */
 .section-label {
@@ -434,11 +403,7 @@ section {
   border: 1px solid var(--border-cyan);
 }
 
-.tag-gold {
-  background: var(--gold-dim);
-  color: var(--gold);
-  border-color: var(--border-gold);
-}
+
 
 .tag-green {
   background: rgba(57, 255, 20, 0.1);
@@ -481,6 +446,7 @@ section {
 .hero {
   padding: calc(var(--space-24) + var(--header-h)) 0 var(--space-24);
   position: relative;
+  overflow-x: clip; /* the glowing orb must not widen the page on phones */
 }
 
 .hero-eyebrow {
@@ -507,7 +473,7 @@ section {
 }
 
 .hero h1 .name-highlight {
-  color: var(--gold);
+  color: var(--text-primary);
   position: relative;
 }
 
@@ -595,7 +561,7 @@ section {
 }
 
 .care-item:hover {
-  border-color: var(--border-gold);
+  border-color: var(--border-cyan);
   background: var(--bg-card-hover);
   color: var(--text-primary);
 }
@@ -604,7 +570,7 @@ section {
   flex-shrink: 0;
   width: 18px;
   height: 18px;
-  color: var(--gold);
+  color: var(--cyan);
 }
 
 /* Architecture & Security */
@@ -639,12 +605,8 @@ section {
 }
 
 /* AI Agent Engineering section */
-.section-label-gold {
-  color: var(--gold);
-}
-.section-label-gold::before {
-  color: var(--text-muted);
-}
+
+
 
 .ai-points {
   display: grid;
@@ -659,7 +621,7 @@ section {
   gap: var(--space-3);
   padding: var(--space-4) var(--space-5);
   background: var(--bg-card);
-  border: 1px solid rgba(201, 168, 76, 0.12);
+  border: 1px solid rgba(0, 229, 255, 0.12);
   border-radius: var(--radius);
   transition: all var(--t-med);
   font-size: 0.9rem;
@@ -667,7 +629,7 @@ section {
 }
 
 .ai-point:hover {
-  border-color: var(--border-gold);
+  border-color: var(--border-cyan);
   background: var(--bg-card-hover);
   color: var(--text-primary);
 }
@@ -676,7 +638,7 @@ section {
   flex-shrink: 0;
   width: 18px;
   height: 18px;
-  color: var(--gold);
+  color: var(--cyan);
   margin-top: 2px;
 }
 
@@ -696,8 +658,8 @@ section {
 .ai-results {
   margin-top: var(--space-8);
   padding: var(--space-6);
-  background: var(--gold-dim);
-  border: 1px solid rgba(201, 168, 76, 0.15);
+  background: var(--cyan-dim);
+  border: 1px solid rgba(0, 229, 255, 0.15);
   border-radius: var(--radius-lg);
 }
 
@@ -707,7 +669,7 @@ section {
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--cyan);
   margin: 0 0 var(--space-3);
 }
 
@@ -731,7 +693,7 @@ section {
   content: '✓';
   position: absolute;
   left: 0;
-  color: var(--gold);
+  color: var(--cyan);
   font-family: var(--font-mono);
   font-weight: 700;
 }
@@ -1110,4 +1072,101 @@ section {
 @keyframes page-in {
   from { opacity: 0; transform: translateY(10px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Contact form: delivery failure and honeypot */
+.form-failure {
+  display: none;
+  background: rgba(255, 107, 107, 0.08);
+  border: 1px solid rgba(255, 107, 107, 0.35);
+  border-radius: var(--radius);
+  padding: var(--space-4) var(--space-5);
+  color: #ff6b6b;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: var(--space-4);
+}
+.form-failure.visible { display: block; }
+.form-success { margin-top: var(--space-4); }
+.form-botcheck { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+/* Hero role line */
+.hero h1 .hero-role { color: var(--cyan); }
+
+/* ============================================================
+   LEXTIA — the only gold on the site, owl in its real colours
+   ============================================================ */
+.btn-lextia {
+  background: var(--lextia-gold-dim);
+  color: var(--lextia-gold);
+  border-color: var(--border-lextia);
+}
+.btn-lextia:hover {
+  background: rgba(232, 184, 75, 0.22);
+  box-shadow: var(--shadow-lextia);
+  color: var(--lextia-gold);
+}
+.lextia-owl-mini {
+  background: #f6f1e3;
+  border-radius: 4px;
+  padding: 1px;
+}
+
+.lextia-card {
+  margin-top: var(--space-6);
+  display: flex;
+  gap: var(--space-6);
+  align-items: flex-start;
+  background: linear-gradient(135deg, rgba(232, 184, 75, 0.07), var(--bg-card) 55%);
+  border: 1px solid var(--border-lextia);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-card);
+}
+.lextia-owl {
+  flex: 0 0 auto;
+  width: 96px;
+  height: 96px;
+  border-radius: 18px;
+  background: #f6f1e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lextia-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--lextia-gold);
+  margin: 0 0 var(--space-2);
+}
+.lextia-card h3 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin: 0 0 var(--space-3);
+}
+.lextia-text {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 720px;
+  margin: 0 0 var(--space-4);
+}
+.lextia-link {
+  font-family: var(--font-mono);
+  color: var(--lextia-gold);
+  font-weight: 500;
+}
+.lextia-link:hover { color: #f3cf77; }
+@media (max-width: 640px) {
+  .lextia-card { flex-direction: column; padding: var(--space-6); }
+}
+
+/* Contact: LinkedIn alternative next to the game */
+.locked-alt {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: var(--space-4);
 }

@@ -15,39 +15,44 @@ const translations = {
     'nav.contact': 'Contact',
     'nav.locked': 'locked',
     'nav.unlocked': 'unlocked',
+    'skip': "Skip to content",
 
     /* Hero */
-    'hero.eyebrow': 'Tech Lead · AI Expert — Lille',
-    'hero.title': 'Tech Lead & AI Expert in Lille',
-    'hero.subtitle': 'Tech Lead & AI Expert based in Lille (Hauts-de-France, France). On assignment at ADEO on the supply chain platform, orchestrating order management at global scale. Distributed architecture, AI agent engineering and harness engineering for the Lille metropolitan area and beyond.',
+    'hero.eyebrow': "Software and AI engineer · 15 years of experience · Lille",
+    'hero.title': "Tech Lead & AI Enabler",
+    'hero.subtitle': "I support teams from scoping to production: architecture, technical leadership, AI-assisted development. My common thread: reliability and operational excellence.",
     'hero.cta.game': 'Play to unlock contact',
     'hero.cta.gh': 'GitHub',
+    'hero.cta.lextia': "Lextia →",
 
     /* Working on */
     'working.label': 'Current focus',
     'working.title': "What I'm working on",
-    'working.desc': 'Building resilient, event-driven systems at scale, with a strong focus on correctness and developer experience.',
-    'card1.stack': 'Spring Boot 4 · Reactor · Kafka Streams · MongoDB · GraphQL',
-    'card1.desc': 'Core OMS platform: reactive, event-driven, globally distributed.',
-    'card2.stack': 'Spring AI + Gemini: embedding intelligence into OMS workflows',
-    'card2.desc': 'LLM-augmented order lifecycle: smarter routing, anomaly detection, and AI-assisted operations.',
+    'working.desc': "Reliable systems, from scoping to production, with AI as a lever for teams.",
+    'card1.stack': "Redesigning a large-scale store inventory system",
+    'card1.desc': "Modular architecture, progressive migration and technical leadership of a critical platform for a major retail group.",
+    'card2.stack': "Harness engineering & spec-driven development (OpenSpec)",
+    'card2.desc': "Framing AI agents with specifications, guardrails and review loops, so they deliver reliable code as part of a team.",
     'card3.stack': 'An MCP server for AI-assisted support, investigation, and automation',
     'card3.desc': 'Model Context Protocol server connecting AI agents to internal tools and runbooks.',
+    'lextia.label': "Alongside",
+    'lextia.title': "Founder of Lextia.",
+    'lextia.text': "The French site-inspection report (procès-verbal de constat), drafted from the judicial officer’s audio recording. Its domain lexicon, enriched with each firm’s names, places and terms, lets the AI write the firm’s own words instead of approximations.",
 
     /* Values */
     'values.label': 'Values',
     'values.title': 'What I care about',
     'values.desc': 'Principles that guide my technical decisions and the way I collaborate.',
-    'care.1': 'Secure-by-design and defense-in-depth',
-    'care.2': 'Reducing MTTR and improving observability',
-    'care.3': 'Engineering excellence and developer experience',
-    'care.4': 'Inner-source culture and knowledge sharing',
-    'care.5': 'Home automation',
+    'care.1': "Reliability and operational excellence",
+    'care.2': "Secure-by-design and defense-in-depth",
+    'care.3': "Reducing MTTR and improving observability",
+    'care.4': "Engineering excellence and developer experience",
+    'care.5': "Inner-source culture and knowledge sharing",
 
     /* Architecture */
-    'arch.label': 'Architecture and security',
+    'arch.label': "Architecture and reliability",
     'arch.title': 'How I build systems',
-    'arch.desc': 'Security and resilience are built in from the start, not added afterwards.',
+    'arch.desc': "Reliability, resilience and security are built in from the start, not added afterwards.",
     'arch.1': 'Zero-trust boundaries between microservices: mutual TLS, scoped service accounts, and explicit authorization at every hop.',
     'arch.2': 'Event-driven architecture with idempotent consumers and the outbox pattern to ensure reliable semantics across distributed transactions.',
     'arch.3': 'Observability built on structured logs, distributed tracing, and RED metrics, with MTTR optimized from alert to root cause.',
@@ -79,7 +84,7 @@ const translations = {
     /* Game */
     'game.label': 'Mini-game',
     'game.title': 'snake<span style="color:var(--cyan)">.exe</span>',
-    'game.desc': 'Navigate the network. Consume the viruses. Reach <strong style="color:var(--gold);">10 points</strong> to unlock the contact form below.',
+    'game.desc': "Navigate the network. Consume the viruses. Reach <strong style=\"color:var(--text-primary);\">10 points</strong> to unlock the contact form below. No time to play? <a href=\"https://www.linkedin.com/in/tchoteau/\" target=\"_blank\" rel=\"noopener noreferrer\">Write to me on LinkedIn</a>.",
     'game.score': 'SCORE',
     'game.status': 'Keyboard: <kbd style="font-family:var(--font-mono);color:var(--cyan);">↑ ↓ ← →</kbd> or <kbd style="font-family:var(--font-mono);color:var(--cyan);">W A S D</kbd> · <kbd style="font-family:var(--font-mono);color:var(--cyan);">SPACE</kbd> to restart',
     'game.overlay.start.title': '[ SNAKE.EXE ]',
@@ -91,9 +96,10 @@ const translations = {
 
     /* Contact locked */
     'contact.locked.title': 'Contact locked',
-    'contact.locked.text': 'Complete the game above with a score of <strong style="color:var(--gold);">10 points</strong> to unlock the contact form.',
+    'contact.locked.text': "Complete the game above with a score of <strong style=\"color:var(--text-primary);\">10 points</strong> to unlock the contact form.",
     'contact.locked.progress': 'Progress:',
     'contact.locked.cta': 'Play the game',
+    'contact.locked.linkedin': "Or write to me directly <a href=\"https://www.linkedin.com/in/tchoteau/\" target=\"_blank\" rel=\"noopener noreferrer\">on LinkedIn</a>.",
 
     /* Contact unlocked */
     'contact.unlocked.title': 'Contact unlocked',
@@ -111,6 +117,9 @@ const translations = {
     'form.message.error': 'Please enter a message.',
     'form.submit': 'Send →',
     'form.success': "✓ Message sent. I'll get back to you soon.",
+    'form.sending': "Sending…",
+    'form.failure': "✗ The message could not be sent. Please try again, or write to me on LinkedIn.",
+    'form.subject': "New message from tchoteau.fr",
 
     /* Footer */
     'footer.copy': '© 2026 Thomas Choteau. Built with curiosity and caffeine.',
@@ -123,39 +132,44 @@ const translations = {
     'nav.contact': 'Contact',
     'nav.locked': 'verrouillé',
     'nav.unlocked': 'débloqué',
+    'skip': "Aller au contenu",
 
     /* Hero */
-    'hero.eyebrow': 'Tech Lead · Expert IA — Lille',
-    'hero.title': 'Tech Lead & Expert IA à Lille',
-    'hero.subtitle': "Tech Lead & Expert IA basé à Lille (Hauts-de-France). En mission chez ADEO sur la plateforme supply chain, on orchestre la gestion des commandes à l’échelle mondiale. Architecture distribuée, ingénierie d’agents IA et harness engineering pour la métropole lilloise et au-delà.",
+    'hero.eyebrow': "Ingénieur informatique et IA · 15 ans d’expérience · Lille",
+    'hero.title': "Tech Lead & AI Enabler",
+    'hero.subtitle': "J’accompagne les équipes du cadrage à la production : architecture, pilotage technique, développement assisté par IA. Mon fil rouge : la fiabilité et l’excellence opérationnelle.",
     'hero.cta.game': 'Jouer pour débloquer le contact',
     'hero.cta.gh': 'GitHub',
+    'hero.cta.lextia': "Lextia →",
 
     /* Working on */
     'working.label': 'Focus actuel',
     'working.title': 'Sur quoi je travaille',
-    'working.desc': "Construire des systèmes résilients et event-driven à grande échelle, avec une exigence forte sur la justesse et l’expérience développeur.",
-    'card1.stack': 'Spring Boot 4 · Reactor · Kafka Streams · MongoDB · GraphQL',
-    'card1.desc': "Plateforme OMS: réactive, event-driven, distribuée à l’échelle mondiale.",
-    'card2.stack': "Spring AI + Gemini: intégrer l’intelligence dans les workflows OMS",
-    'card2.desc': "Cycle de vie des commandes augmenté par LLM: routage plus fin, détection d’anomalies, opérations assistées par IA.",
+    'working.desc': "Des systèmes fiables, du cadrage à la production, avec l’IA comme levier pour les équipes.",
+    'card1.stack': "Refonte d’un système de stock magasin à grande échelle",
+    'card1.desc': "Architecture modulaire, migration progressive et pilotage technique d’une plateforme critique pour un grand groupe de la distribution.",
+    'card2.stack': "Harness engineering & spec-driven development (OpenSpec)",
+    'card2.desc': "Cadrer les agents IA par des spécifications, des garde-fous et des boucles de revue, pour qu’ils livrent du code fiable en équipe.",
     'card3.stack': "Un serveur MCP pour le support, l’investigation et l’automatisation assistés par IA",
     'card3.desc': "Serveur Model Context Protocol connectant les agents IA aux outils internes et aux runbooks.",
+    'lextia.label': "En parallèle",
+    'lextia.title': "Fondateur de Lextia.",
+    'lextia.text': "Le procès-verbal de constat rédigé à partir de l’enregistrement audio du commissaire de justice. Son lexique métier, enrichi des noms, lieux et termes de chaque étude, permet à l’IA d’écrire les mots de l’étude plutôt que des approximations.",
 
     /* Values */
     'values.label': 'Valeurs',
     'values.title': 'Ce qui me tient à cœur',
     'values.desc': 'Des principes qui guident mes décisions techniques et ma façon de collaborer.',
-    'care.1': 'Sécurité par conception et défense en profondeur',
-    'care.2': 'Réduire le MTTR et améliorer l’observabilité',
-    'care.3': 'Excellence d’ingénierie et expérience développeur',
-    'care.4': 'Culture inner-source et partage de connaissances',
-    'care.5': 'Domotique',
+    'care.1': "Fiabilité et excellence opérationnelle",
+    'care.2': "Sécurité par conception et défense en profondeur",
+    'care.3': "Réduire le MTTR et améliorer l’observabilité",
+    'care.4': "Excellence d’ingénierie et expérience développeur",
+    'care.5': "Culture inner-source et partage de connaissances",
 
     /* Architecture */
-    'arch.label': 'Architecture et sécurité',
+    'arch.label': "Architecture et fiabilité",
     'arch.title': 'Comment je construis les systèmes',
-    'arch.desc': 'La sécurité et la résilience font partie du design, elles ne se rajoutent pas après coup.',
+    'arch.desc': "La fiabilité, la résilience et la sécurité font partie du design, elles ne se rajoutent pas après coup.",
     'arch.1': 'Frontières zero-trust entre microservices: mTLS, comptes de service à privilèges limités, autorisation explicite à chaque appel.',
     'arch.2': "Architecture event-driven avec consommateurs idempotents et outbox pattern, pour des traitements fiables sur des transactions distribuées.",
     'arch.3': "Observabilité basée sur logs structurés, traces distribuées et métriques RED, avec un MTTR optimisé de l'alerte à la cause racine.",
@@ -187,7 +201,7 @@ const translations = {
     /* Game */
     'game.label': 'Mini-jeu',
     'game.title': 'snake<span style="color:var(--cyan)">.exe</span>',
-    'game.desc': 'Naviguez dans le réseau. Consommez les virus. Atteignez <strong style="color:var(--gold);">10 points</strong> pour débloquer le formulaire de contact.',
+    'game.desc': "Naviguez dans le réseau. Consommez les virus. Atteignez <strong style=\"color:var(--text-primary);\">10 points</strong> pour débloquer le formulaire de contact. Pas le temps de jouer ? <a href=\"https://www.linkedin.com/in/tchoteau/\" target=\"_blank\" rel=\"noopener noreferrer\">Écrivez-moi sur LinkedIn</a>.",
     'game.score': 'SCORE',
     'game.status': 'Clavier: <kbd style="font-family:var(--font-mono);color:var(--cyan);">↑ ↓ ← →</kbd> ou <kbd style="font-family:var(--font-mono);color:var(--cyan);">W A S D</kbd> · <kbd style="font-family:var(--font-mono);color:var(--cyan);">ESPACE</kbd> pour redémarrer',
     'game.overlay.start.title': '[ SNAKE.EXE ]',
@@ -199,9 +213,10 @@ const translations = {
 
     /* Contact locked */
     'contact.locked.title': 'Contact verrouillé',
-    'contact.locked.text': 'Terminez le jeu ci-dessus avec un score de <strong style="color:var(--gold);">10 points</strong> pour débloquer le formulaire de contact.',
+    'contact.locked.text': "Terminez le jeu ci-dessus avec un score de <strong style=\"color:var(--text-primary);\">10 points</strong> pour débloquer le formulaire de contact.",
     'contact.locked.progress': 'Progression:',
     'contact.locked.cta': 'Jouer au jeu',
+    'contact.locked.linkedin': "Ou écrivez-moi directement <a href=\"https://www.linkedin.com/in/tchoteau/\" target=\"_blank\" rel=\"noopener noreferrer\">sur LinkedIn</a>.",
 
     /* Contact unlocked */
     'contact.unlocked.title': 'Contact débloqué',
@@ -219,6 +234,9 @@ const translations = {
     'form.message.error': 'Veuillez entrer un message.',
     'form.submit': 'Envoyer →',
     'form.success': '✓ Message envoyé. Je vous répondrai bientôt.',
+    'form.sending': "Envoi…",
+    'form.failure': "✗ Le message n’a pas pu partir. Réessayez, ou écrivez-moi sur LinkedIn.",
+    'form.subject': "Nouveau message depuis tchoteau.fr",
 
     /* Footer */
     'footer.copy': '© 2026 Thomas Choteau. Construit avec curiosité et caféine.',
