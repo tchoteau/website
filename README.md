@@ -74,7 +74,7 @@ Every `<form data-contact-form>` is sent by `app.js` to Web3Forms. Set the acces
 const WEB3FORMS_ACCESS_KEY = '…';
 ```
 
-The key is public by design: it only lets someone send a message to the mailbox it was created for. While it is empty, the form shows a failure message pointing to LinkedIn instead of pretending the message was sent.
+The key is public by design: it only lets someone send a message to the mailbox it was created for. The form was created for `https://www.tchoteau.fr`. If the key is ever emptied or refused, the form shows a failure message pointing to LinkedIn instead of pretending the message was sent.
 
 ## Contact Unlock Reset (dev)
 

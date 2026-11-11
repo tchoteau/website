@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
    Every <form data-contact-form> on the site goes through here.
    The Web3Forms access key is public by design (it only lets
    someone send a message to the mailbox it was created for).    */
-const WEB3FORMS_ACCESS_KEY = '';
+const WEB3FORMS_ACCESS_KEY = '83d5280f-e9ee-4d44-b3cf-fe5a5fee3053';
 const WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit';
 
 const CONTACT_FALLBACK_TEXT = {
