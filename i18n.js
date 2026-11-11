@@ -44,10 +44,10 @@ const translations = {
     'values.title': 'What I care about',
     'values.desc': 'Principles that guide my technical decisions and the way I collaborate.',
     'care.1': "Reliability and operational excellence",
-    'care.2': "Secure-by-design and defense-in-depth",
-    'care.3': "Reducing MTTR and improving observability",
-    'care.4': "Engineering excellence and developer experience",
-    'care.5': "Inner-source culture and knowledge sharing",
+    'care.2': "Agreeing on the specification before writing the code",
+    'care.3': "AI proposes, humans decide",
+    'care.4': "Measuring rather than assuming",
+    'care.5': "Helping teams grow and sharing what works",
 
     /* Architecture */
     'arch.label': "Architecture and reliability",
@@ -153,10 +153,10 @@ const translations = {
     'values.title': 'Ce qui me tient à cœur',
     'values.desc': 'Des principes qui guident mes décisions techniques et ma façon de collaborer.',
     'care.1': "Fiabilité et excellence opérationnelle",
-    'care.2': "Sécurité par conception et défense en profondeur",
-    'care.3': "Réduire le MTTR et améliorer l’observabilité",
-    'care.4': "Excellence d’ingénierie et expérience développeur",
-    'care.5': "Culture inner-source et partage de connaissances",
+    'care.2': "Se mettre d’accord sur la spécification avant d’écrire le code",
+    'care.3': "L’IA propose, l’humain décide",
+    'care.4': "Mesurer plutôt que supposer",
+    'care.5': "Faire grandir les équipes et partager ce qui marche",
 
     /* Architecture */
     'arch.label': "Architecture et fiabilité",
